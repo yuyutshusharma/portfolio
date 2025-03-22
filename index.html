@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuyutshu Sharma</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Rock+Salt&family=Rowdies:wght@300;400;700&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line" id="ball"></div>
+      <div class="contents">
+        <h2>Hey, I am Yuyutshu Sharma</h2>
+        <div class="description">
+          <p>CSIT Student</p>
+          <p>A boy who strives to learn and understand deeply</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script>
+      const line = document.querySelector(".line:nth-child(2)");
+
+      line.addEventListener("animationiteration", () => {
+        line.style.animationPlayState = "paused";
+        setTimeout(() => {
+          line.style.animationPlayState = "running";
+        }, 3200);
+      });
+    </script> -->
+
+    <!-- <script>
+      const ball = document.getElementById("ball");
+      const lines = document.querySelectorAll(".line");
+      function getRandomColor() {
+        let color = "rgb(";
+        for (let i = 0; i < 3; i++) {
+          color += Math.random() * 255;
+          if (i < 2) {
+            color += ",";
+          }
+        }
+        color += ")";
+
+        return color;
+      }
+      var previousColor = "#fff";
+      let count = 0;
+      ball.addEventListener("animationiteration", function () {
+        // const randomColor = getRandomColor();
+        // ball.style.backgroundColor = randomColor;
+
+        // if (count % 2 == 0) {
+        //   lines[1].style.backgroundColor = "#fff";
+        // } else {
+        //   lines[0].style.backgroundColor = "#000";
+        // }
+        // previousColor = randomColor;
+        //
+
+        let i = 0;
+        if (count % 2 == 0) {
+          i = 1;
+        } else {
+          i = 0;
+        }
+        lines[i].style.backgroundColor = "#fff";
+        lines[1 - i].style.backgroundColor = "#000";
+        count++;
+      });
+    </script> -->
+  </body>
+</html>

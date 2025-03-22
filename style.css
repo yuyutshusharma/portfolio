@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    width: 30%;
+
+}
+
+.contents{
+    text-align: center;
+    color: white;
+
+    /* margin-top: 40px; */
+}
+
+h2{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+
+.description{
+    font-size: 16px;
+    font-style: italic;
+}
+
+.line{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    position: absolute;
+    top: -10px;
+    border-radius: 50%;
+    animation: moveBox 1.8s ease-in-out infinite ;
+}
+
+
+
+
+
+.line:nth-child(2) {
+    right: 0px;
+    background-color:blue ;
+    
+}
+
+
+.line:nth-child(3){ 
+right: 200px;
+background-color: green;
+top: 80px;
+box-shadow: none;
+}
+
+
+@keyframes moveBox {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* @keyframes moveParabola {
+    0% {
+        transform: translate(0, 0);
+        box-shadow:3px 3px 7px 0px  white inset;
+ 
+    }
+     
+    25% {
+        transform: translate(97px, -30px);
+      
+    }
+
+    75% {
+        transform: translate(291px, -30px); 
+    } 
+     50% {
+        transform: translate(194px, -40px);
+
+      
+    } 
+     100% {
+        transform: translate(0, 0); 
+        box-shadow: -2px -2px 7px 0px  white inset;
+
+    } 
+} */
+
+@media screen and (max-width: 1060px){
+    .container{
+        width: 40%;
+    }
+    
+}
+
+@media screen and (max-width: 790px){
+    .container{
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 645px){
+    .container{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 532px){
+    .container{
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width: 455px){
+    .container{
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 390px){
+    .container{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 352px){
+    .container{
+        width: 100%;
+    }
+    
+}
